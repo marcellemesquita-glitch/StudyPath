@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block extra_css %}
+
+{% endblock %}
+
+{% block title %} 
+Login 
+{% endblock %}
+
+{% block main %}
+    <div class="container vh-100 d-flex justify-content-center align-items-center">
+        <div class="col-12 col-md-6 col-lg-4">
+            <form class="p-4 border rounded shadow-sm bg-white">
+                <div class="mb-3">
+                    <label for="inputEmail" class="form-label">Digite seu email</label>
+                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Digite sua senha</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}
